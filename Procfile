@@ -1,1 +1,1 @@
-eb: gunicorn <filename>:<main method name>
+web: gunicorn <filename>:<main method name>
