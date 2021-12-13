@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisis Sentimen Gojek</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="nav justify-content-center py-2 font-monospace mb-2" style="background-color: rgb(40, 192, 40);">
+        <a class="nav-link btn btn-outline-success text-light fs-4 fw-bold" aria-current="page" href="/"
+            style="border: none;">Analisis Sentimen Gojek</a>
+    </nav>
+
+    <div class="col-md-12">
+        <div class="d-flex align-items-center card mx-5 position-relative text-center" style="height: 80vh;">
+            <div class="card-body position-absolute top-50 start-50 translate-middle">
+                <div class="my-3">
+                    {{pred}}
+                </div>
+                Masukkan Dataset
+                <form method="POST" action="" enctype="multipart/form-data" class="my-2">
+                    <div class="input-group mb-3">
+                        <input type="file" class="form-control" id="inputGroupFile02" name="input-dataset">
+                        <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                    </div>
+                    <button type="submit" class="btn btn-outline-primary" style="width: 8vw;">Submit</button>
+                    <a href="/" class="btn btn-outline-primary" style="width: 8vw;">Reset</a>
+                </form>
+
+                <div class="my-5"></div>
+                Dataset tweet dapat diperoleh melalui Netlytic.org
+                <div class="my-2"></div>
+                <a href="https://netlytic.org" class="btn btn-outline-primary">Open</a>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
